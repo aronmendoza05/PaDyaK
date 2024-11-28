@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PADKYAK</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <header>
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                </a></li>
+                <li><a href="#">ACCESSORIES</a></li>
+                <li><a href="#">STORE</a></li>
+                <li><a href="#">CONTACT</a></li>
+                <li><a href="#">Log In</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">PADYaK</a></li>
+                <li class="hideOnMobile"><a href="responsive.html">HOME</a></li>
+                <li class="hideOnMobile"><a href="#">ACCESSORIES</a></li>
+                <li class="hideOnMobile"><a href="#">STORE</a></li>
+                <li class="hideOnMobile"><a href="#">INFO</a></li>
+                <li class="hideOnMobile"><a href="#">Log In</a></li>
+                <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+                </a></li>
+            </ul>      
+        </nav>
+    </header>
+    <div class="image-container">
+        <img src="roadbike.jpg" alt="League of Legends" width="800PX" height="500PX">
+        <h2>"ROAD BIKE"</h2>
+        <p>A road bike is a bicycle designed primarily for riding quickly on paved surfaces. Road bikes have drop handlebars, fairly narrow slick tyres and usually place the rider in a position where their backside is higher than their hands.</p>
+
+        <img src="mountainbike.jpg" alt="League of Legends" width="800PX" height="500PX">
+        <h2>"MOUNTAIN BIKE"</h2>
+            <p>A mountain bike (MTB) or mountain bicycle is a bicycle designed for off-road cycling. Mountain bikes share some similarities with other bicycles, but incorporate features designed to enhance durability and performance in rough terrain, which often makes them heavier, more complex and less efficient on smooth surfaces.</p>
+
+    </div>
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+     <div class="footer">
+        <footer>© Mendoza, Aron Bernard T.</footer>
+      </div>
+</body>
+</html>
